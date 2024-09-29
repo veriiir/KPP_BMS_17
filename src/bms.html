@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KPP BMS</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      /* Sembunyikan semua section secara default */
+      .section {
+        display: none;
+      }
+
+      /* Tampilkan section jika diakses melalui anchor link */
+      #home:target,
+      #team:target,
+      #content:target {
+        display: block;
+      }
+
+      /* Tampilkan section 'home' secara default jika tidak ada anchor yang dipilih */
+      body:not(:has(:target)) #home {
+        display: block;
+      }
+    </style>
+  </head>
+  <body
+    class="min-h-screen bg-gradient-to-b from-orange-600 via-purple-800 to-red-600 text-white"
+  >
+    <!-- Navigation Bar -->
+    <nav class="bg-transparent fixed top-0 right-0 w-auto z-10 p-4">
+      <div class="flex space-x-4">
+        <a href="#home" class="text-white hover:underline">Home</a>
+        <a href="#team" class="text-white hover:underline">Meet the Team</a>
+        <a href="#content" class="text-white hover:underline">Content</a>
+      </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="section">
+      <div
+        class="flex flex-col-reverse md:flex-row items-center justify-center py-16 mt-20"
+      >
+        <div class="text-left md:w-1/2 md:mr-10 md:ml-10">
+          <!-- Added margin-left -->
+          <h1 class="text-5xl font-bold">Fail Better,<br />Shine Brighter</h1>
+          <p class="mt-4 text-lg">
+            Welcome to our Website Community, don’t forget to reach out in the
+            profil below 😊
+          </p>
+          <div class="mt-8">
+            <a
+              href="#team"
+              class="bg-white text-black py-2 px-6 rounded-full hover:bg-gray-300 transition"
+              >Meet the Team</a
+            >
+            <a
+              href="#content"
+              class="bg-white text-black py-2 px-6 rounded-full hover:bg-gray-300 transition ml-4"
+              >View Content</a
+            >
+          </div>
+        </div>
+        <div class="md:w-1/2 mt-6 md:mt-0">
+          <img
+            src="Assets/landing_page_two_people_web_apps_landing_page_light_f-512.webp"
+            alt="Illustration"
+            class="rounded-lg mx-auto"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Meet The Team Section -->
+    <section id="team" class="section">
+      <h2 class="text-3xl font-semibold text-center mb-10 mt-20">
+        Meet The Team
+      </h2>
+      <div
+        class="max-w-5xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8"
+      >
+        <!-- Team Member Card 1 -->
+        <div class="object-cover bg-white text-black p-3 rounded-lg text-left">
+          <img
+            src="Assets/Tio.jpg"
+            alt="Team Member 1"
+            class="w-full h-36 rounded-lg mb-4 object-cover"
+          />
+          <p>
+            <strong>Nama:</strong> Tio Axellino Irin<br />
+            <span class="block">NRP: 5027231065</span>
+            <span class="block">Asal: Batam</span>
+          </p>
+        </div>
+        <!-- Team Member Card 2 -->
+        <div class="bg-white text-black p-3 rounded-lg text-left">
+          <img
+            src="Assets/Fery.jpg"
+            alt="Team Member 2"
+            class="object-cover w-full h-36 rounded-lg mb-4"
+            style="object-position: 50% 20%"
+          />
+          <p>
+            <strong>Nama:</strong> Veri Rahman<br />
+            <span class="block">NRP: 5027231088</span>
+            <span class="block">Asal: Rembang</span>
+          </p>
+        </div>
+        <!-- Team Member Card 3 -->
+        <div class="object-cover bg-white text-black p-3 rounded-lg text-left">
+          <img
+            src="Assets/Kris.jpg"
+            alt="Team Member 3"
+            class="w-full h-36 rounded-lg mb-4 object-cover"
+            style="object-position: 50% 30%"
+          />
+          <p>
+            <strong>Nama:</strong> Nicholas Arya<br />
+            <span class="block">NRP: 5027231058</span>
+            <span class="block">Asal: Surabaya</span>
+          </p>
+        </div>
+        <!-- Team Member Card 4 -->
+        <div class="object-cover bg-white text-black p-3 rounded-lg text-left">
+          <img
+            src="Assets/Fade.jpg"
+            alt="Team Member 4"
+            class="w-full h-36 rounded-lg mb-4 object-cover"
+          />
+          <p>
+            <strong>Nama:</strong> Nicholas Emanuel Fade<br />
+            <span class="block">NRP: 5027231070</span>
+            <span class="block">Asal: Tangerang Selatan</span>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Content Section -->
+    <section id="content" class="section">
+      <h2 class="text-3xl font-semibold text-center mb-10 mt-20">Contents</h2>
+      <div class="max-w-5xl mx-auto grid grid-cols-1 gap-8">
+        <!-- Basic Photography and Videography techniques (Image Left, Text Right) -->
+        <div
+          class="flex flex-col md:flex-row text-white p-6 rounded-lg items-center"
+        >
+          <img
+            src="https://via.placeholder.com/300"
+            alt="Photography and Videography"
+            class="w-300 h-300 rounded-lg object-cover mb-4 md:mb-0 md:mr-4"
+          />
+          <div class="flex-1 text-left">
+            <h3 class="text-xl font-semibold mb-4">
+              Basic Photography and Videography techniques
+            </h3>
+            <p class="text-lg">
+              Di pelatihan BMS, Kita mempelajari banyak teknik dasar fotografi
+              mulai dari komposisi, frame, camera, setting cahaya, dan banyak
+              lagi. Kita juga mempelajari teknik dasar videografi mulai dari
+              posisi merekam video, editing, dan lain-lain.
+            </p>
+          </div>
+        </div>
+        <!-- Journalism and Press Insight (Image Right, Text Left) -->
+        <div
+          class="flex flex-col md:flex-row text-white p-6 rounded-lg items-center"
+        >
+          <div class="flex-1 md:mr-4 text-left">
+            <h3 class="text-xl font-semibold mb-4">
+              Journalism and Press insight
+            </h3>
+            <p class="text-lg">
+              Jurnalisme adalah praktek dari mengumpulkan rekaman,
+              memverifikasi, dan melaporkan informasi publik yang penting.
+              Tujuan dari jurnalisme adalah untuk menyediakan informasi publik
+              yang dapat diandalkan.
+            </p>
+          </div>
+          <img
+            src="https://via.placeholder.com/300"
+            alt="Journalism and Press"
+            class="w-300 h-300 rounded-lg object-cover mb-4 md:mb-0 md:ml-4"
+          />
+        </div>
+        <!-- Writing Techniques (Image Left, Text Right) -->
+        <div
+          class="flex flex-col md:flex-row text-white p-6 rounded-lg items-center"
+        >
+          <img
+            src="https://via.placeholder.com/300"
+            alt="Writing Techniques"
+            class="w-300 h-300 rounded-lg object-cover mb-4 md:mb-0 md:mr-4"
+          />
+          <div class="flex-1 text-left">
+            <h3 class="text-xl font-semibold mb-4">Writing Techniques</h3>
+            <p class="text-lg">
+              Teknik menulis adalah metode dan strategi yang digunakan penulis
+              untuk membuat konten yang menarik dan efektif. BMS mengajarkan
+              banyak hal mulai dari teknik menulis, teknik literasi,
+              plagiarisme, dan banyak lagi.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
